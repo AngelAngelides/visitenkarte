@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Gothic Book";
+  src: url("ITCAvantGardeStdBk.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gothic Bold";
+  src: url("ITCAvantGardeStdBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Gothic Medium";
+  src: url("ITCAvantGardeStdMd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("JosefinSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin Sans Bold";
+  src: url("JosefinSans-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
