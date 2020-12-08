@@ -8,11 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { useLocation } from "@reach/router"
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,7 +24,7 @@ const Layout = ({ children, location }) => {
     }
   `)
 
-  console.log("Location: ", location)
+  const { pathname } = useLocation()
 
   return (
     <>
@@ -32,14 +33,16 @@ const Layout = ({ children, location }) => {
       <footer>
         <div className="nav">
           <Link to="/">
-            <button className={location.pathname == "/" ? "underline" : ""}>
-              Home
-            </button>
+            <button className={pathname == "/" ? "underline" : ""}>Home</button>
           </Link>
           <div className="vertical-line"></div>
-          <Link to="/impressum">
+          <Link to="/impressum/">
             <button
-              className={location.pathname == "/impressum" ? "underline" : ""}
+              className={
+                pathname == "/impressum/" || pathname == "/impressum"
+                  ? "underline"
+                  : ""
+              }
             >
               Impressum
             </button>

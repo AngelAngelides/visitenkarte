@@ -14,7 +14,7 @@
 }
 
 hr {
-  width: 100vw;
+  width: 1200px;
   margin: 0 auto;
   border-top: 1px solid #0f4c81;
 }
@@ -32,7 +32,8 @@ footer {
   color: white;
   display: flex;
   align-items: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
 }
 
 footer .nav {
@@ -74,7 +75,7 @@ button:hover {
 
 .main-title {
   text-align: center;
-  margin: 20px;
+  margin: 25px;
   letter-spacing: 0.5rem;
   font-family: "Gothic Bold";
   font-size: 41px;
@@ -82,16 +83,24 @@ button:hover {
   letter-spacing: 5.1px;
 }
 
+.tagline {
+  text-align: center;
+  font-size: 26px;
+  line-height: 21px;
+  color: #0f4c81;
+  font-family: "Gothic Oblique";
+  letter-spacing: 3.3px;
+}
+
 .blurb {
-  width: 78vw;
+  width: 995px;
   font-family: "Gothic Book";
   color: #0f4c81;
   text-align: center;
   letter-spacing: 1.3px;
   line-height: 30px;
   font-size: 20px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 25px auto 25px auto;
 }
 
 .background-container {
@@ -104,17 +113,26 @@ button:hover {
   font-size: 3rem;
 }
 
+.background-smaller {
+  width: 792px;
+  font-size: 2.3rem;
+}
+
 .buzzword {
   text-transform: uppercase;
-  opacity: 62%;
+  opacity: 0.62;
   line-height: 100%;
   color: #e19eaa;
   letter-spacing: 0.4rem;
   font-family: "Gothic Bold";
 }
 
+.buzzword-bolder {
+  opacity: 0.8;
+}
+
 .buzzword-transparent {
-  opacity: 12%;
+  opacity: 0.15;
 }
 
 .konzeption {
@@ -128,7 +146,7 @@ button:hover {
 }
 
 .beratung {
-  margin-left: 150px;
+  margin-left: 130px;
 }
 
 .programmierung {
@@ -154,13 +172,18 @@ a {
   color: inherit;
 }
 
-/* .impressum p {
-  line-height: 1.5rem;
-} */
+.space-under {
+  margin-bottom: 11px;
+  display: inline-block;
+}
 
-@media only screen and (max-width: 700px) {
+.impressum p {
+  line-height: 130%;
+}
+
+@media only screen and (max-width: 420px) {
   hr {
-    width: 90vw;
+    width: 80vw;
   }
 
   main {
@@ -171,13 +194,12 @@ a {
     font-size: 16px;
   }
 
-  footer {
-    position: fixed;
-    bottom: 0;
-  }
-
   .main-title {
     font-size: 18px;
+  }
+
+  .tagline {
+    font-size: 16px;
   }
 
   .blurb {
@@ -200,8 +222,9 @@ a {
   }
 
   .impressum {
-    font-size: 15px;
-    top: 47%;
+    width: 100%;
+    font-size: 14px;
+    top: 40%;
   }
 
   button {
@@ -209,22 +232,79 @@ a {
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
+@media only screen and (min-width: 421px) and (max-width: 700px) {
+  hr {
+    width: 85vw;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .main-title {
+    font-size: 23px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .blurb {
+    width: 90vw;
+    font-size: 12px;
+  }
+
+  .background-container {
+    width: 421px;
+    font-size: 1.3rem;
+  }
+
+  .buzzword {
+    line-height: 40px;
+  }
+
+  button {
+    margin: 0 70px 0 70px;
+  }
+
+  .beratung {
+    margin-left: 100px;
+  }
+
+  .impressum {
+    font-size: 13px;
+    top: 53%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  hr {
+    width: 85vw;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  .main-title {
+    font-size: 32px;
+  }
+  .tagline {
+    font-size: 21px;
+  }
+  .blurb {
+    width: 90vw;
+    font-size: 15px;
+  }
   .background-container {
     width: 700px;
     font-size: 2.5rem;
   }
 
-  .buzzword {
-    line-height: 100px;
+  .background-smaller {
+    width: 600px;
+    font-size: 2rem;
   }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-  }
-
-  .blurb {
-    width: 95vw;
+  .impressum {
+    font-size: 15px;
   }
 }

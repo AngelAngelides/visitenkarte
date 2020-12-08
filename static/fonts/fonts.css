@@ -32,3 +32,10 @@
   font-weight: bold;
   font-style: bold;
 }
+
+@font-face {
+  font-family: "Gothic Oblique";
+  src: url("ITCAvantGardeStdBkObl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
