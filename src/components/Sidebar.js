@@ -73,7 +73,6 @@ export const StyledLink = styled.div`
   }
 `
 const SideBar = ({ isMain }) => {
-  console.log(isMain)
   const { hasOpenSideBar, onClick } = useContext(SideBarContext)
   return (
     <>

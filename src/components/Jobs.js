@@ -96,7 +96,6 @@ const Content = () => {
       }
     }
   `)
-  console.log(data.productOwner.childImageSharp.fluid)
   return (
     <StyledContentWrapper>
       <Dots number={6} type="top-left" />
