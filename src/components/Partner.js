@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { h2 } from "../theme/typography"
 import Dots from "./Dots"
 import { brandGrey } from "../theme/colors"
+import { useInView } from "react-intersection-observer"
 
 const StyledContentWrapper = styled.div`
   display: flex;
@@ -35,8 +36,8 @@ const StyledImageItemWrapper = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: opacity 0.35s ease-out;
-  width: 30%;
+  transition: all 0.35s ease-out;
+  width: ${({inView}) => inView ? "30%" : "50%"};
   margin: ${({ isMiddle }) => isMiddle && "0 24px"};
   .gatsby-image-wrapper {
     width: 100%;
@@ -45,7 +46,7 @@ const StyledImageItemWrapper = styled.a`
     opacity: 0.5;
   }
   @media (min-width: 780px) {
-    width: 150px;
+    width: ${({inView}) => inView ? "150px" : "200px"};
   }
 `
 
@@ -74,6 +75,7 @@ const StyledSubTitle = styled.p`
 `
 
 const Content = () => {
+  const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: true	 })
   const data = useStaticQuery(graphql`
     query {
       spryLabs: file(
@@ -108,21 +110,21 @@ const Content = () => {
     }
   `)
   return (
-    <StyledContentWrapper>
+    <StyledContentWrapper ref={ref}>
       <Dots number={5} type="top-center" />
       <StyledTextWrapper>
         <StyledTitle>Partner</StyledTitle>
       </StyledTextWrapper>
       <StyledImgWrapper>
-        <StyledImageItemWrapper href="https://galaniprojects.de/">
+        <StyledImageItemWrapper inView={inView} href="https://galaniprojects.de/">
           <Img fluid={data.spryLabs.childImageSharp.fluid} />
           <StyledSubTitle>sprylab technologies GmbH</StyledSubTitle>
         </StyledImageItemWrapper>
-        <StyledImageItemWrapper isMiddle href="https://sprylab.com/en/">
+        <StyledImageItemWrapper inView={inView} isMiddle href="https://sprylab.com/en/">
           <Img fluid={data.galaniprojects.childImageSharp.fluid} />
           <StyledSubTitle>galaniprojects GmbH</StyledSubTitle>
         </StyledImageItemWrapper>
-        <StyledImageItemWrapper href="https://botlabs.org/">
+        <StyledImageItemWrapper inView={inView} href="https://botlabs.org/">
           <Img fluid={data.botLabs.childImageSharp.fluid} />
           <StyledSubTitle>BOTLabs GmbH</StyledSubTitle>
         </StyledImageItemWrapper>

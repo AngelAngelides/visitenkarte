@@ -60,4 +60,4 @@ Als kennzeichnende Bestandteile Deiner Persönlichkeit schätzen wir an Dir: Ver
 <br/>
 <br/>
 
-Wenn Du diese Herausforderung annehmen willst, freuen wir uns auf Deine aussagekräftige Bewerbung, unter Angabe des Starttermins an: : jobs@appconception.one, Ansprechpartner Herr Manuel Ranghetto.
+Wenn Du diese Herausforderung annehmen willst, freuen wir uns auf Deine aussagekräftige Bewerbung, unter Angabe des Starttermins an: jobs@appconception.one, Ansprechpartner Herr Manuel Ranghetto.

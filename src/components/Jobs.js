@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import { h2 } from "../theme/typography"
 import Dots from "./Dots"
 import { brandGreen, brandLight } from "../theme/colors"
+import { useInView } from "react-intersection-observer"
+import { useInnerwidth } from "../hooks/useInnerwidth"
 
 const StyledContentWrapper = styled.div`
   display: flex;
@@ -26,6 +28,9 @@ const StyledImgWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  transition: transform 2.5s ease-out;
+  transform: ${({ inView, innerWidth }) =>
+    inView ? "translateX(0)" : `translateX(-${innerWidth}px)`};
   @media (min-width: 780px) {
     flex-wrap: nowrap;
   }
@@ -96,13 +101,15 @@ const Content = () => {
       }
     }
   `)
+  const innerWidth = useInnerwidth()
+  const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: true })
   return (
-    <StyledContentWrapper>
+    <StyledContentWrapper ref={ref}>
       <Dots number={6} type="top-left" />
       <StyledTextWrapper>
         <StyledTitle>Jobs</StyledTitle>
       </StyledTextWrapper>
-      <StyledImgWrapper>
+      <StyledImgWrapper inView={inView} innerWidth={innerWidth}>
         <StyledImageItemWrapper>
           <Link to="/jobs/product-owner">
             <Img fluid={data.productOwner.childImageSharp.fluid} />
