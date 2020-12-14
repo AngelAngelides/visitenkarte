@@ -1,41 +1,42 @@
 @font-face {
-  font-family: "Gothic Book";
-  src: url("ITCAvantGardeStdBk.otf") format("opentype");
-  font-weight: normal;
+  font-family: "Spartan";
+  src: url('/fonts/Spartan-ExtraBold.ttf');
   font-style: normal;
+  font-display: block;
+  font-weight: 1000;
 }
-
 @font-face {
-  font-family: "Gothic Bold";
-  src: url("ITCAvantGardeStdBold.otf") format("opentype");
-  font-weight: bold;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "Gothic Medium";
-  src: url("ITCAvantGardeStdMd.otf") format("opentype");
-  font-weight: normal;
+  font-family: "Spartan";
+  src: url('/fonts/Spartan-Bold.ttf');
   font-style: normal;
+  font-display: fallback;
+  font-weight: 700;
 }
-
 @font-face {
-  font-family: "Josefin Sans";
-  src: url("JosefinSans-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Spartan";
+  src: url('/fonts/Spartan-SemiBold.ttf');
   font-style: normal;
+  font-display: fallback;
+  font-weight: 600;
 }
-
 @font-face {
-  font-family: "Josefin Sans Bold";
-  src: url("JosefinSans-Regular.ttf") format("truetype");
-  font-weight: bold;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "Gothic Oblique";
-  src: url("ITCAvantGardeStdBkObl.otf") format("opentype");
-  font-weight: normal;
+  font-family: "Spartan";
+  src: url('/fonts/Spartan-Regular.ttf');
   font-style: normal;
+  font-display: fallback;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Spartan Medium";
+  src: url('/fonts/Spartan-Medium.ttf');
+  font-style: normal;
+  font-display: fallback;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Spartan Black";
+  src: url('/fonts/Spartan-Black.ttf');
+  font-style: normal;
+  font-display: fallback;
+  font-weight: 900;
 }

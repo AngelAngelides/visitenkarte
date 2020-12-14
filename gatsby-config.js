@@ -9,12 +9,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static`,
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -136,9 +136,17 @@ module.exports = {
       options: {
         custom: {
           families: [
-            "Gothic Book, Gothic Bold, Gothic Oblique, Gothic Medium, Josefin Sans, Josefin Sans Bold",
+            'Spartan:n10,n7,n6,n4', 'Spartan Medium', 'Spartan Black',
           ],
           urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/, // See below to configure properly
         },
       },
     },
