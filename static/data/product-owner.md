@@ -3,8 +3,6 @@
 <br/>
 
 ### Das Unternehmen
-<br/>
-<br/>
 
 Unser Start-Up-Unternehmen steht gerade in den Startlöchern für die Markteinführung einer neuen App und das „going live“ steht kurz bevor. Die Finanzierung ist ebenfalls gesichert und als inspirierenden, innovativen Standort haben wir uns für Berlin entschieden.<br/>
 Passend zum Kick-Off des Geschäftsmodells und der Apps bauen wir  nun die Entwicklungsabteilung aus und suchen engagierte und selbständige Mitarbeiter für die interne Produktentwicklung.<br/>

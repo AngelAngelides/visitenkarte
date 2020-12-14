@@ -14,14 +14,21 @@ const StyledContentWrapper = styled.div`
   flex-direction: column;
   max-width: 1176px;
   margin: 0 auto;
-  height: 700px;
+  height: 450px;
   position: relative;
+  @media (min-width: 780px) {
+    height: 700px;
+  }
 `
 const StyledImgWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  @media (min-width: 880px) {
+    width: 60%;
+  }
 `
 
 const StyledImageItemWrapper = styled.a`
@@ -30,7 +37,7 @@ const StyledImageItemWrapper = styled.a`
   align-items: center;
   transition: opacity 0.35s ease-out;
   width: 30%;
-  margin: ${({isMiddle}) => isMiddle && "0 24px"};
+  margin: ${({ isMiddle }) => isMiddle && "0 24px"};
   .gatsby-image-wrapper {
     width: 100%;
   }
@@ -38,7 +45,7 @@ const StyledImageItemWrapper = styled.a`
     opacity: 0.5;
   }
   @media (min-width: 780px) {
-    width: 300px;
+    width: 150px;
   }
 `
 
@@ -51,19 +58,27 @@ const StyledTitle = styled.h2`
 
 const StyledSubTitle = styled.p`
   font-family: Spartan;
-  font-size: 20px;
+  font-size: 10px;
   letter-spacing: 0;
-  line-height: 30px;
+  line-height: 14px;
+
   font-weight: 400;
   margin-top: 16px;
   text-align: center;
   color: ${brandGrey};
+  @media (min-width: 780px) {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
 `
 
 const Content = () => {
   const data = useStaticQuery(graphql`
     query {
-      spryLabs: file(relativePath: { eq: "aco-website-partner-logo-sprylab-color.png" }) {
+      spryLabs: file(
+        relativePath: { eq: "aco-website-partner-logo-sprylab-color.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 210) {
             ...GatsbyImageSharpFluid
@@ -81,7 +96,9 @@ const Content = () => {
           }
         }
       }
-      botLabs: file(relativePath: { eq: "aco-website-partner-logo-botlabs-color.png" }) {
+      botLabs: file(
+        relativePath: { eq: "aco-website-partner-logo-botlabs-color.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 210) {
             ...GatsbyImageSharpFluid
@@ -92,7 +109,7 @@ const Content = () => {
   `)
   return (
     <StyledContentWrapper>
-      <Dots number={4} type="top-center" />
+      <Dots number={5} type="top-center" />
       <StyledTextWrapper>
         <StyledTitle>Partner</StyledTitle>
       </StyledTextWrapper>

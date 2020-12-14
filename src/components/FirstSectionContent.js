@@ -57,7 +57,7 @@ const Content = () => {
       <StyledTextWrapper>
         <StyledTitle>
           Professionelle App-Entwicklung – von der Konzeption über das Design
-          bis zum Go Live.
+          bis zum Go Live
         </StyledTitle>
         <StyledCopy>
           Bei der Entwicklung unserer Apps stehen die User im Zentrum. Für sie

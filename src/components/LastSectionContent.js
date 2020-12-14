@@ -34,47 +34,48 @@ const StyledCopy = styled.div`
   }
 `
 const StyledLogo = styled.div`
-svg {
+  svg {
     width: 100%;
   }
-@media (min-width: 1120px) {
-  svg {
-    height: 352px;
-    width: 577px;
+  margin-top: 50px;
+  @media (min-width: 1120px) {
+    svg {
+      height: 352px;
+      width: 577px;
+    }
   }
-}
 `
 
 const Content = () => (
-    <StyledContentWrapper>
-      <Dots number={7} type="top-left" />
-      <StyledTextWrapper>
-        <StyledTitle>Impressum</StyledTitle>
-        <StyledCopy>
-          <p>
-            Inhaltlich verantwortlich:
-            <br />
-            AppConceptionOne GmbH
-            <br />
-          </p>
-          <p>
-            Marc Moughrabi
-            <br />
-            Legiendamm 14
-            <br />
-            10179 Berlin
-            <br />
-          </p>
-          Handelsregister Nummer: HRB 220089 B
-        </StyledCopy>
-        <StyledTitle>Kontakt</StyledTitle>
-        <StyledCopy>info@appconception.one</StyledCopy>
-      </StyledTextWrapper>
-      <StyledLogo>
-        <Logo />
-      </StyledLogo>
-      <Dots number={6} type="bottom-left" />
-    </StyledContentWrapper>
-  )
+  <StyledContentWrapper>
+    <Dots number={7} type="top-left" />
+    <StyledTextWrapper>
+      <StyledTitle>Impressum</StyledTitle>
+      <StyledCopy>
+        <p>
+          Inhaltlich verantwortlich:
+          <br />
+          AppConceptionOne GmbH
+          <br />
+        </p>
+        <p>
+          Marc Moughrabi
+          <br />
+          Legiendamm 14
+          <br />
+          10179 Berlin
+          <br />
+        </p>
+        Handelsregister Nummer: HRB 220089 B
+      </StyledCopy>
+      <StyledTitle>Kontakt</StyledTitle>
+      <StyledCopy>info@appconception.one</StyledCopy>
+    </StyledTextWrapper>
+    <StyledLogo>
+      <Logo />
+    </StyledLogo>
+    <Dots number={6} type="bottom-left" />
+  </StyledContentWrapper>
+)
 
 export default Content

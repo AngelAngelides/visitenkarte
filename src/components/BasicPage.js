@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 import { brandGreen } from "../theme/colors"
-import { copy, h2, h3 } from "../theme/typography"
+import { articleCopy, h2, h3 } from "../theme/typography"
 
 const StyledBasicPageBlock = styled.div`
   max-width: 1176px;
@@ -32,7 +32,7 @@ const StyledBasicPageBlock = styled.div`
   a,
   li,
   p {
-    ${copy}
+    ${articleCopy}
     margin-bottom: 12px;
   }
 
@@ -50,7 +50,7 @@ const StyledBasicPageBlock = styled.div`
       transition: color 0.35s ease;
     }
   }
-  @media (min-width: 480px) {
+  @media (min-width: 780px) {
     padding: 68px;
   }
 `

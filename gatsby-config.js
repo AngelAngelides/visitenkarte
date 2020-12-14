@@ -136,7 +136,7 @@ module.exports = {
       options: {
         custom: {
           families: [
-            'Spartan:n10,n7,n6,n4', 'Spartan Medium', 'Spartan Black',
+            'Spartan:n10,n7,n6,n4', 'Spartan Medium:n5', 'Spartan Black',
           ],
           urls: ["/fonts/fonts.css"],
         },

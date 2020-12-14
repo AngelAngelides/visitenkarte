@@ -21,8 +21,8 @@ export const h3 = `
     letter-spacing: 0;
     line-height: 18px;
     @media (min-width: 780px) {
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 24px;
+        line-height: 24px;
     }
 `
 
@@ -40,13 +40,23 @@ export const footer = `
 `
 export const copy = `
     color: ${brandDark};
-    font-family: Spartan;
-    font-size: 18px;
-    font-weight: 600;
+    font-family: Spartan Medium;
+    font-size: 14px;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 20px;
     @media (min-width: 780px) {
         font-size: 20px;
         line-height: 30px;
+        font-family: Spartan;
+        font-weight: 600;
     }
+`
+export const articleCopy = `
+    color: ${brandDark};
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+    font-family: Spartan Medium;
+    font-weight: 600;
 `

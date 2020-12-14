@@ -65,20 +65,20 @@ const Dots = ({ number, type }) => {
 
   return (
     <>
-      {dotArray.map((slot) => {
+      {dotArray.map(slot => {
         switch (type) {
           case "top-left":
             return <StyledDotTopLeft key={slot} num={slot} />
           case "bottom-left":
-            return <StyledDotBotLeft key={slot - 1} num={slot -1} />
+            return <StyledDotBotLeft key={slot} num={slot - 1} />
           case "bottom-right":
-            return <StyledDotBotRight key={slot - 1} num={slot - 1} />
+            return <StyledDotBotRight key={slot} num={slot - 1} />
           case "top-right":
-            return <StyledDotTopRight key={slot} num={slot} />
-            case "top-center":
-            return <StyledDotTopCenter key={slot} num={slot} />
-            case "bottom-center":
-            return <StyledDotBottomCenter key={slot - 1} num={slot - 1} />
+            return <StyledDotTopRight key={slot} num={slot - 1} />
+          case "top-center":
+            return <StyledDotTopCenter key={slot} num={slot - 1} />
+          case "bottom-center":
+            return <StyledDotBottomCenter key={slot} num={slot - 1} />
           default:
             return null
         }
