@@ -15,8 +15,10 @@ const StyledContentWrapper = styled.div`
   position: relative;
   max-width: 1176px;
   margin: 0 auto;
-  height: 700px;
   position: relative;
+  @media (min-width: 780px) {
+    height: 700px;
+  }
 `
 
 const StyledTextWrapper = styled.div`

@@ -7,7 +7,10 @@ const StyledSection = styled.section`
   max-width: 1600px;
   margin: 24px auto 0;
   background-color: ${brandLight};
-  padding: 0 24px;
+  padding: 24px;
+  @media (min-width: 780px) {
+    padding: 0 24px;
+  }
 `
 
 const Section = ({ children, id }) => (

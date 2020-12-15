@@ -58,5 +58,5 @@ export const articleCopy = `
     line-height: 26px;
     letter-spacing: 0;
     font-family: Spartan Medium;
-    font-weight: 600;
+    font-weight: 500;
 `
