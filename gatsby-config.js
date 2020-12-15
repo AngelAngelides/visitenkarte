@@ -24,111 +24,58 @@ module.exports = {
         background_color: `#0f4c81`,
         theme_color: `#0f4c81`,
         display: `minimal-ui`,
-        icon: `${__dirname}/static/favicon-310.png`,
-        icons: [
-          {
-            src: `/favicons/favicon-16.png`,
-            sizes: `16x16`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-32.png`,
-            sizes: `32x32`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-57.png`,
-            sizes: `57x57`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-60.png`,
-            sizes: `60x60`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-64.png`,
-            sizes: `64x64`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-70.png`,
-            sizes: `70x70`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-72.png`,
-            sizes: `72x72`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-76.png`,
-            sizes: `76x76`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-96.png`,
-            sizes: `96x96`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-114.png`,
-            sizes: `114x114`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-120.png`,
-            sizes: `120x120`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-144.png`,
-            sizes: `144x144`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-150.png`,
-            sizes: `150x150`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-152.png`,
-            sizes: `152x152`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-160.png`,
-            sizes: `160x160`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-180.png`,
-            sizes: `180x180`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-          {
-            src: `/favicons/favicon-192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-            purpose: `maskable`,
-          },
-        ],
+        icon: `${__dirname}/static/android-chrome-512x512.png`,
+        // icons: [
+        //   {
+        //     src: `/favicons/favicon-16x16.png`,
+        //     sizes: `16x16`,
+        //     type: `image/png`,
+            
+        //   },
+        //   {
+        //     src: `/favicons/favicon-32x32.png`,
+        //     sizes: `32x32`,
+        //     type: `image/png`,
+            
+        //   },
+        //   {
+        //     rel: "mask-icon",
+        //     src: `/favicons/safari-pinned-tab.svg`,
+        //     sizes: `512x512`,
+        //     type: `svg`,
+            
+        //   },
+        //   {
+        //     src: `/favicons/mstile-150x150.png`,
+        //     sizes: `150x150`,
+        //     type: `image/png`,
+            
+        //   },
+        //   {
+        //     src: `/favicons/favicon-152.png`,
+        //     sizes: `152x152`,
+        //     type: `image/png`,
+            
+        //   },
+        //   {
+        //     src: `/favicons/apple-touch-icon.png`,
+        //     sizes: `180x180`,
+        //     type: `image/png`,
+        //     purpose: `maskable`,
+        //   },
+        //   {
+        //     src: `/favicons/android-chrome-192x192.png.png`,
+        //     sizes: `192x192`,
+        //     type: `image/png`,
+            
+        //   },
+        //   {
+        //     src: `/favicons/android-chrome-512x512.png`,
+        //     sizes: `512x512`,
+        //     type: `image/png`,
+            
+        //   },
+        // ],
       },
     },
     {

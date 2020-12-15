@@ -48,7 +48,7 @@ const Content = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
-        relativePath: { eq: "aco_picture_aco_app_preview_1.png" }
+        relativePath: { eq: "picture_aco_app_preview_1.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 534) {
@@ -69,9 +69,10 @@ const Content = () => {
           Vermarktung
         </StyledTitle>
         <StyledCopy>
-          Jeder Tag kann sexy sein! OneDollarXClub ist die Dating-App mit
-          Features, die Spaß bringen und eine offene und direkte Kommunikation
-          einfacher machen - für alle Geschlechter und sexuelle Orientierungen.
+          Mit unserer neuen Dating App haben wir eine neue und innovative Casual
+          Dating App auf den Markt gebracht, die Spaß bringt und eine offene und
+          direkte Kommunikation einfacher macht - für alle Geschlechter und
+          sexuelle Orientierungen.
         </StyledCopy>
       </StyledTextWrapper>
       <Img fluid={data.placeholderImage.childImageSharp.fluid} />
