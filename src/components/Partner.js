@@ -115,11 +115,11 @@ const Content = () => {
         <StyledTitle>Partner</StyledTitle>
       </StyledTextWrapper>
       <StyledImgWrapper>
-        <StyledImageItemWrapper inView={inView} href="https://galaniprojects.de/">
+        <StyledImageItemWrapper inView={inView} href="https://sprylab.com/en/">
           <Img fluid={data.spryLabs.childImageSharp.fluid} />
           <StyledSubTitle>sprylab technologies GmbH</StyledSubTitle>
         </StyledImageItemWrapper>
-        <StyledImageItemWrapper inView={inView} isMiddle href="https://sprylab.com/en/">
+        <StyledImageItemWrapper inView={inView} isMiddle href="https://galaniprojects.de/">
           <Img fluid={data.galaniprojects.childImageSharp.fluid} />
           <StyledSubTitle>galaniprojects GmbH</StyledSubTitle>
         </StyledImageItemWrapper>
