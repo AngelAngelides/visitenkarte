@@ -61,9 +61,9 @@ const Content = () => (
         <p>
           Marc Moughrabi
           <br />
-          Legiendamm 14
+          Rosenstraße 2
           <br />
-          10179 Berlin
+          10178 Berlin 
           <br />
         </p>
         Handelsregister Nummer: HRB 220089 B
