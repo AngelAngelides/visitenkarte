@@ -47,4 +47,4 @@ Wenn Du über die nachfolgenden Erfahrungen verfügst, solltest Du bestens in un
 <br/>
 <br/>
 
-Wenn Du diese Herausforderung annehmen willst, freuen wir uns auf Deine aussagekräftige Bewerbung, unter Angabe des Starttermins an: jobs@appconception.one, Ansprechpartner Herr Manuel Ranghetto.
+Wenn Du diese Herausforderung annehmen willst, freuen wir uns auf Deine aussagekräftige Bewerbung, unter Angabe des Starttermins an: jobs@appconception.one.
